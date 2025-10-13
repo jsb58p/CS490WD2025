@@ -1,0 +1,37 @@
+CREATE TABLE Customers ( <br>
+    id INTEGER PRIMARY KEY, <br>
+    name TEXT, <br>
+    membership_level TEXT <br>
+); <br> <br>
+
+CREATE TABLE Rentals ( <br>
+    id INTEGER PRIMARY KEY, <br>
+    customer_id INTEGER, <br>
+    movie_title TEXT, <br>
+    rental_price REAL, <br>
+    FOREIGN KEY (customer_id) REFERENCES Customers(id) <br>
+); <br> <br>
+
+INSERT INTO Customers (id, name, membership_level) VALUES <br>
+(1, 'Ava', 'Premium'), <br>
+(2, 'Noah', 'Standard'), <br>
+(3, 'Liam', 'Premium'), <br>
+(4, 'David', 'Basic'), <br>
+(5, 'Emma', 'Standard'); <br> <br>
+
+INSERT INTO Rentals (id, customer_id, movie_title, rental_price) VALUES <br>
+(1, 1, 'The Matrix', 4.99), <br>
+(2, 2, 'Inception', 5.99), <br>
+(3, 1, 'Interstellar', 6.99), <br>
+(4, 3, 'The Dark Knight', 5.49), <br>
+(5, 4, 'Pulp Fiction', 3.99); <br> <br>
+
+SELECT * FROM Customers; <br> <br>
+
+SELECT * FROM Rentals; <br> <br>
+
+SELECT name, membership_level FROM Customers; <br> <br>
+
+SELECT movie_title, rental_price FROM Rentals; <br> <br>
+
+SELECT * FROM Customers, Rentals; <br> <br>
