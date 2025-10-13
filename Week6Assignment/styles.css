@@ -15,7 +15,7 @@ body {
 	border-radius: 12px;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 	padding: 30px;
-	width: 40%; /* changed to 60% to look more like screenshots */
+	width: 40%; 
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
 	color: white;
 	border: none;
 	border-radius: 8px;
-	padding: 10px 16px; /* used padding instead of margin to fix add button size/alignment */
+	padding: 10px 16px; /* used padding instead of margin because margin was making the size/alignment of the "Add" button different than the screenshots */
 
 }
 
@@ -113,3 +113,4 @@ li button:hover {
 	color: #555;
 
 }
+
