@@ -14,6 +14,7 @@ body {
 
 body.dark-mode {
 		background: linear-gradient(to bottom, rgba(0, 0, 200, 0.75) 0%, rgba(100, 100, 100, 0.5) 50%, rgba(0, 0, 200, 0.75) 100%);
+
 }
 
 button {
@@ -39,7 +40,7 @@ a {
 }
 
 footer a{
-	color: blue;
+	color: purple;
 	text-decoration: underline;
 }
 .intro {
@@ -84,7 +85,12 @@ footer a{
 	gap: 20px;
 	padding: 20px;
 	margin-bottom: 85px;
+	background-color: rgba(100, 0, 150);
+}
+
+.features.dark-mode {
 	background-color: rgba(0,35,100,0.75);
+
 }
 
 .feature {

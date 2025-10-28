@@ -3,6 +3,9 @@ const intro = document.querySelector('.intro p');
 const introImg = document.querySelector('.intro img');
 let nameInput = document.getElementById('nameInput');
 const button  = document.getElementById('themeToggle');
+const color = document.body.classList;
+const color2 = document.querySelector('.features').classList;
+
 
 const hour = new Date().getHours();
 
@@ -32,7 +35,6 @@ if (hour < 19 && hour > 6) {
 	introImg.alt = 'Moon';
 }
 
-
 //Allows the user to enter their name for the greeting (there is no way to ssve it yet)
 nameInput.addEventListener('keypress', (e) => {
 	if (e.key === 'Enter') {
@@ -53,9 +55,9 @@ intro.addEventListener('click', () => {
 
 // Ability to toggle color mode
 button.addEventListener('click', () => {
-	document.body.classList.toggle('dark-mode');
+	color.toggle('dark-mode');
+	color2.toggle('dark-mode');
 });
-
 
 
 
