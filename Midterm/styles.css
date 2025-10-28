@@ -1,0 +1,145 @@
+/* Jacob Biddinger, 10/27/2025*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, rgba(200,100,0,0.75) 0%, rgba(200, 0, 200, 0.5) 50%, rgba(200, 100, 0, 0.75) 100%);
+	text-align: center;
+}
+
+body.dark-mode {
+		background: linear-gradient(to bottom, rgba(0, 0, 200, 0.75) 0%, rgba(100, 100, 100, 0.5) 50%, rgba(0, 0, 200, 0.75) 100%);
+}
+
+button {
+	color: white;
+	background-color: gray;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+footer {
+	color: white;
+}
+
+
+a {
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a{
+	color: blue;
+	text-decoration: underline;
+}
+.intro {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Parkinsans, sans-serif;
+	font-size: 50px;
+	
+	gap: 20px;
+}
+
+.intro img {
+	width: 15%;
+	margin: 0px 0px 20px 20px;
+}
+
+.intro p {
+	align-items: center;
+	gap: 10px;
+}
+
+.intro input {
+	float: right;
+}
+
+.wrapper {
+	font-family: 'Jost', sans-serif;
+	background-color: rgba(200, 200, 200, 1);
+	border-radius: 12px;
+	box-shadow: 0 4px 22px rgba(200,200,200,1);
+	padding: 30px;
+	border-radius: 15px;
+	border: 8px solid #ccc;	
+	margin: 50px auto;
+	width: 40%
+}
+
+.features {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	margin-bottom: 85px;
+	background-color: rgba(0,35,100,0.75);
+}
+
+.feature {
+	background-color: rgba(200,200,200,1);
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	position: relative;
+}
+
+.feature h3 { 
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	
+}
+
+.feature img {
+	width: 70%;
+	height: 50%;
+	display: block;
+	margin: 20px auto;
+}
+
+.feature:hover {
+	background-color: white;
+}
+
+.footer {
+	margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+	.intro {
+		flex-direction: column;
+		text-align: center;
+	}
+	.wrapper {
+		width: 50%;
+	}
+	
+	
+}
+
+@media (max-width: 480px) {
+	.features {
+		grid-template-columns: 1fr;
+	}
+	
+	.wrapper {
+		width: 60%;
+	}
+}
