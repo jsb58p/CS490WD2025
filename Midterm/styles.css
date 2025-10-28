@@ -85,7 +85,7 @@ footer a{
 	gap: 20px;
 	padding: 20px;
 	margin-bottom: 85px;
-	background-color: rgba(100, 0, 150);
+	background-color: rgba(150, 0, 100);
 }
 
 .features.dark-mode {
@@ -149,3 +149,4 @@ footer a{
 		width: 60%;
 	}
 }
+
