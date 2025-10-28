@@ -35,7 +35,7 @@ if (hour < 19 && hour > 6) {
 	introImg.alt = 'Moon';
 }
 
-//Allows the user to enter their name for the greeting (there is no way to ssve it yet)
+//Allows the user to enter their name for the greeting (there is no way to save it yet)
 nameInput.addEventListener('keypress', (e) => {
 	if (e.key === 'Enter') {
 		nameInput.style.visibility = 'hidden';
@@ -62,3 +62,4 @@ button.addEventListener('click', () => {
 
 
 updateGreeting();
+
