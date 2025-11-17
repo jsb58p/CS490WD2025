@@ -1,0 +1,189 @@
+/* Jacob Biddinger, 11/14/2025*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, rgba(75,50,5,.9) 0%, rgba(250, 250, 250, 0.75) 50%, rgba(75,50,5,.9) 100%);
+	text-align: center;
+}
+
+nav {
+	margin: auto;
+	display: flex;
+	gap: 10%;
+	background-color: rgba(50, 50, 50, .75);
+	justify-content: center;
+	padding: 3%;
+	border-bottom: 5px groove gray;
+}
+
+nav a { 
+	padding: 0 10% 0 10%;
+	font-family: 'Cinzel', Serif;
+	border: 3px solid black;
+	background-color: rgba(75,50,5,.9);
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,1), -1px -1px 3px rgba(0,0,0,1);
+}
+
+a {
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+	background-color: rgba(5,50,100,.9);
+	box-shadow: 5px 5px 5px #333;
+}
+
+footer {
+	color: white;
+}
+
+footer a{
+	color: purple;
+	text-decoration: underline;
+}
+
+.intro {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Cinzel', serif;
+	font-size: 50px;
+	gap: 10%;
+	text-shadow: 2px 2px 3px rgba(5,50,100,.9);
+
+}
+
+
+.intro img {
+	width: 15%;
+	margin: 20px 0px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 2px rgba(50,50,50,.7);
+	border: 2px solid gray;
+
+}
+
+.intro p {
+	align-items: center;
+	gap: 10px;
+}
+
+.intro input {
+	float: right;
+}
+
+.bio {
+  display: grid;
+  width: 100%;
+  border-top: 10px groove gray;
+  border-bottom: 10px ridge gray;
+  margin: auto;
+  background-color: rgb(50, 50, 50);
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 1) 0%, rgba(50, 50, 50, 1) 100%);
+  color: rgb(200, 200, 200);
+  text-align: left;
+  padding: 50px 100px;
+  line-height: 1.5;
+}
+
+.bio h2 {
+	font-family: 'Cinzel', Serif;
+}
+
+.bio h3{
+	font-family: 'Cinzel', Serif;
+}
+
+
+
+.wrapper {
+	font-family: 'Jost', sans-serif;
+	background-color: rgba(200, 200, 200, 1);
+	border-radius: 12px;
+	box-shadow: 0 4px 22px rgba(200,200,200,1);
+	padding: 30px;
+	border-radius: 15px;
+	border: 8px solid #ccc;	
+	margin: 50px auto;
+	width: 40%
+}
+
+.features {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px 10% 20px 10%;
+	border-bottom: 10px ridge gray;
+	margin-bottom: 10x;
+	background-color: rgba(75,50,5,0.75);
+}
+
+.features.dark-mode {
+	background-color: rgba(0,35,100,0.75);
+
+}
+
+.feature {
+	max-width: 840px;
+	margin: auto;
+	background-color: rgba(200,200,200,1);
+	padding: 5px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	position: relative;
+}
+
+.feature h3 { 
+	margin: auto;
+	
+}
+
+.feature img {
+	width: 90%;
+	height: 90%;
+	display: block;
+	margin: 20px auto;
+}
+
+.feature:hover {
+	background-color: white;
+}
+
+.footer {
+	margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+	.intro {
+		flex-direction: column;
+		text-align: center;
+	}
+	.wrapper {
+		width: 50%;
+	}
+	
+	
+}
+
+@media (max-width: 480px) {
+	.features {
+		grid-template-columns: 1fr;
+	}
+	
+	.wrapper {
+		width: 60%;
+	}
+}
