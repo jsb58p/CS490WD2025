@@ -1,5 +1,7 @@
 <!-- Jacob Biddinger 11/14/2025 -->
+ <!DOCTYPE html>
 <html lang="en"><head>
+
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>CS 490WD Projects</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,22 +12,26 @@
 	
 	<body>
 	
+	
 		<nav>
 		
-			<a href="#bio"><strong>Bio</strong></a> <a href="#resume"><strong>Resume</strong></a> <a href="#education"><strong>Education</strong></a>
+			<a href="#bio"><strong>Bio</strong></a> <a href="#resume"><strong>Resume</strong></a> 
+			<a href="#projects"><strong>Projects</strong></a> <a href="#education"><strong>Education</strong></a> 
 			
 		</nav>
 
 		
 		<div class="intro">
 		
-			<h>
+			<p>
 				Jacob Biddinger				
-			</h>
+			</p>
 			<img src="final/images/portriat.jpg" alt="Portriat">	
 		</div>
 		
 		<div class="bio" id="bio">
+		
+		<button onclick="topFunction()" id="button" title="Go to top">Return to top of page.</button>
 		
 			<h3>
 			
@@ -54,152 +60,316 @@
 		
 		<section class="features" id="resume">
 			
-			<a href="final/files/resume.pdf">
+			
 			<div class="feature">
-				
-				<h3>Resume</h3>
-				
-				<img src="final/images/resume.png" alt="Resume">
-				
-				<p>Click to download full resume.</p>
+			
+				<a href="final/files/resume.pdf">
+					<h3>Resume</h3>
+					
+					<img src="final/images/resume.png" alt="Resume">
+					
+					<p>Click to download full resume.</p>
+				</a>	
 				
 			</div>
-			</a>
-			
+						
 			
 		</section>
 		
+		<section class="title" id="projects">
+		
+			<h2> Projects </h2>
+		
+		</section>
+		
+		<section class="features">
+			
+		
+			<div class="project">
+				
+				<h3>Automative Repair Database</h3>
+				
+				<div class="details">
+				
+					<img src="final/images/database.png" alt="Database">
+				
+					<p> <br>Develop an automotive repair information system to capture repair orders and print invoices for
+						the repair of vehicles.<br><br>  </p>
+					
+					<ul>	
+					
+						<li>Conceptual data modeling (entities, relationships, attributes, keys)<br><br></li>
+						<li>Enhanced Entity-Relationship (EER) diagram design and refinement<br><br></li>
+						<li>Logical data modeling and normalization to BCNF<br><br></li>
+						<li>Defining and enforcing integrity constraints
+							<ul>
+								<li>primary keys</li>
+								<li>foreign keys</li>
+								<li>alternate keys</li>
+								<li>entity integrity<br><br></li>
+							</ul>
+						</li>
+						<li>Translating logical models into PostgreSQL schema using SQL<br><br></li>
+						<li>Writing SQL queries for application requirements and sample transactions<br><br></li>
+						<li>Implementing referential integrity and general constraints in PostgreSQL<br><br></li>
+						<li>Data insertion and test dataset creation for validation<br><br></li>
+						<li>Using pg_dump for database backup and submission<br><br></li>
+						<li>Technical documentation with diagrams, SQL code, outputs, and conclusions<br><br></li>
+						
+					</ul>
+					
+					<nav><a href="https://github.com/jsb58p/Automative-Repair-Database">Github Repo</a></nav>
+					
+				</div>	
+				
+			</div>
+			
+			<div class="project">
+				
+				<h3>Transportation Network Analysis</h3>
+				
+				<div class="details">
+				
+					<img src="final/images/networkmap.png" alt="Transportation Network Analysis">
+				
+					<p> <br>Make a directed, weighted graph to represent a transportation network. This includes creating a
+						list of cities and the distances between them in a fictinal transportation network. The nodes of the 
+						graph are the cities, and the weighted, directed edges between them represent the distances of direction
+						of travel.</p>
+					
+					<ul>
+						
+						<li>C++ programming<br><br></li>
+						<li>STL containers: vector, priority_queue, pair<br><br></li>
+						<li>Dijkstra’s shortest path algorithm<br><br></li>
+						<li>Graph theory modeling (directed, weighted)<br><br></li>
+						
+					</ul>
+					<nav><a href="https://github.com/jsb58p/Transportation-Network-Analysis">Github Repo</a></nav>
+					
+				</div>	
+				
+			</div>
+			
+			<div class="project">
+				
+				<h3>Blockchain Supply Chain Monitoring (WIP)</h3>
+				
+				<div class="details">
+				
+					<img src="final/images/blockchain.jpg" alt="Humidity/Temperature Sensor">
+
+					<p> <br>Simulated device signs readings → backend batches & pins to IPFS → on‑chain 
+						anchor; breach mints NFT and flags related product.<br><br>  </p>
+					
+					<ul>
+						
+						<li>Device Simulator (Real IoT Device Implementation WIP)<br><br></li>
+						<li>Backend Readings/Batch processing<br><br></li>
+						<li>Deployed Smart Contracts on Blockchain test net (DIDLab)<br><br></li>
+						<li>Pinned Data (Temperature, Humidity, Breach Reports) to Inter-Planetary File System<br><br></li>
+						<li>Frontend Decentralized Application to monitor blockchain activity and access IPFS data<br><br></li>
+
+					</ul>
+					
+					<nav><a href="https://github.com/jsb58p/blockchain-midterm">Github Repo</a></nav>
+					
+				</div>	
+				
+			</div>
+			
+			<div class="project">
+				
+				<h3>SOS Game (WIP)</h3>
+				
+				<div class="details">
+				
+				<img src="final/images/sosgame.png" alt="SOS Game">
+				
+					<p> <br>Your customer asks you to develop the software that allows a 
+						blue player to play the SOS game against a red player. Either 
+						player can be human or computer. <br><br> </p>
+					<ul>
+						
+						<li>Object-Oriented Programming (inheritance, polymorphism, encapsulation with Java and JavaFX<br><br></li>
+						<li>JavaFX GUI development<br><br></li>
+						<li>Class diagram and software design documentation<br><br></li>
+						<li>Principles of Software design:
+							<ul>
+								<li>Modularity.</li>
+								<li>Cohesion</li>
+								<li>Data Encapsulation</li>
+								<li>Information Hiding</li>
+								<li>Coupling</li>
+								<li>Separation of Concerns<br><br></li>
+							</ul>
+						</li>
+
+					</ul>
+					<nav><a href="https://github.com/jsb58p/CS449---Software-Engineering-Project">Github Repo</a></nav>
+					
+				</div>	
+				
+			</div>
+			
+		</section>
+		
+		
+		
 		<div class="bio" id="education">
 			
+			<div>
 			<h2>
 				
-				Computer Science Courses Taken<br><br><br>
+				Computer Science Courses Taken<br>
 			
 			</h2>
 			
-			<p>
+			<div class="details">
 			
-				COMP-SCI 100 <br>
-				Comp Fundamental Apps<br><br><br>
-
-				COMP-SCI 101<br>
-				Problm Slvng &amp; Prgmg I<br><br><br>
-	
-				COMP-SCI 101L<br>
-				Problem Solving/Program Lab I<br><br><br>
+				<p>
 				
-				COMP-SCI 191<br>
-				Discrete Structures I<br><br><br>
+					<br>COMP-SCI 100 <br>
+					Comp Fundamental Apps<br><br><br>
 
-				COMP-SCI 201L<br>
-				Problem Solving/Program Lab II<br><br><br>
+					COMP-SCI 101<br>
+					Problm Slvng &amp; Prgmg I<br><br><br>
+		
+					COMP-SCI 101L<br>
+					Problem Solving/Program Lab I<br><br><br>
+					
+					COMP-SCI 191<br>
+					Discrete Structures I<br><br><br>
 
-				COMP-SCI 201R<br>
-				Problm Slvng &amp; Prgmg II<br><br><br>
+					COMP-SCI 201L<br>
+					Problem Solving/Program Lab II<br><br><br>
 
-				COMP-SCI 281R<br>
-				Intro Cmptr Architecture &amp; Org<br><br><br>
+					COMP-SCI 201R<br>
+					Problm Slvng &amp; Prgmg II<br><br><br>
 
-				COMP-SCI 291<br>
-				Discrete Structures II<br><br><br>
+					COMP-SCI 281R<br>
+					Intro Cmptr Architecture &amp; Org<br><br><br>
 
-				COMP-SCI 303<br>
-				Data Structures<br><br><br>
+					COMP-SCI 291<br>
+					Discrete Structures II<br><br><br>
 
-				COMP-SCI 320<br>
-				Data Com. and Networking<br><br><br>
+					COMP-SCI 303<br>
+					Data Structures<br><br><br>
 
-				COMP-SCI 394R<br>
-				Applied Probability<br><br><br>
-				 
-				COMP-SCI 431<br>
-				Intro Operating Systems<br><br><br>
-				 
-				COMP-SCI 441<br>
-				Progrm Lang:Desgn &amp; Imp<br><br><br>
-				 
-				COMP-SCI 470<br>
-				In Database Mgmt Systems<br><br><br>
+					COMP-SCI 320<br>
+					Data Com. and Networking<br><br><br>
 
-				COMP-SCI 483<br>
-				Software Security<br><br><br>
+					COMP-SCI 394R<br>
+					Applied Probability<br><br><br>
+					 
+					COMP-SCI 431<br>
+					Intro Operating Systems<br><br><br>
+					 
+					COMP-SCI 441<br>
+					Progrm Lang:Desgn &amp; Imp<br><br><br>
+					 
+					COMP-SCI 470<br>
+					In Database Mgmt Systems<br><br><br>
+
+					COMP-SCI 483<br>
+					Software Security<br><br><br>
+					
+				</p>
 				
-			</p>
+			</div>
+			</div>
 			
-			<h2> <br><br><br>Other courses taken<br><br><br> </h2>
+			<div>
+			<h2> Other courses taken<br> </h2>
 			
-			<p>
+			<div class="details">
 			
-				MATH 110<br>
-				Precalculus Algebra<br><br><br>
+				<p>
+				
+					<br>MATH 110<br>
+					Precalculus Algebra<br><br><br>
 
-				MATH 125<br>
-				Trigonometry<br><br><br>
+					MATH 125<br>
+					Trigonometry<br><br><br>
 
-				MATH 210<br>
-				Calculus I<br><br><br>
+					MATH 210<br>
+					Calculus I<br><br><br>
 
-				MATH 220<br>
-				Calculus II<br><br><br>
+					MATH 220<br>
+					Calculus II<br><br><br>
 
-				MATH 300<br>
-				Linear Algebra I<br><br><br>
+					MATH 300<br>
+					Linear Algebra I<br><br><br>
+					
+					PHYSICS 240<br>
+					Physics For Scientists and Eng<br><br><br>
+					
+					STAT 115<br>
+					Statistical Reasoning<br><br><br>
 				
-				PHYSICS 240<br>
-				Physics For Scientists and Eng<br><br><br>
-				
-				STAT 115<br>
-				Statistical Reasoning<br><br><br>
+				</p>
 			
-			</p>
+			</div>
+			</div>
 			
-			<h2> <br><br><br>Current courses<br><br><br> </h2>
+			<div>
+			<h2> Current courses<br> </h2>
 			
-			<p>
+			<div class="details">
 				
-				COMP-SCI 449<br>
-				Found of Software Engin<br><br><br>
-				
-				COMP-SCI 456<br>
-				Human Computer Interface<br><br><br>
-				
-				COMP-SCI 476<br>
-				Blockchain<br><br><br>
-				
-				COMP-SCI 436<br>
-				Digital Forensics<br><br><br>
+				<p>
+					
+					<br>COMP-SCI 449<br>
+					Found of Software Engin<br><br><br>
+					
+					COMP-SCI 456<br>
+					Human Computer Interface<br><br><br>
+					
+					COMP-SCI 476<br>
+					Blockchain<br><br><br>
+					
+					COMP-SCI 436<br>
+					Digital Forensics<br><br><br>
 
-				COMP-SCI 490WD<br>
-				Special Topics (Web Development)<br><br><br>
-				
-			</p>
+					COMP-SCI 490WD<br>
+					Special Topics (Web Development)<br><br><br>
+					
+				</p>
 			
-			<h2> <br><br><br>Scheduled Spring 2026<br><br><br> </h2>
+			</div>
+			</div>
 			
-			<p>
-				
-				COMP-SCI 461<br>
-				Intro Artificial Intell<br><br><br>
+			<div>
+			<h2> Scheduled Spring 2026️<br> </h2>
 			
-				COMP-SCI 451R<br>
-				Software Engineering Capstone<br><br><br>
+			<div class="details">
+			
+				<p>
+					
+					<br>COMP-SCI 461<br>
+					Intro Artificial Intell<br><br><br>
 				
-				COMP-SCI 404<br>
-				Intro to Algorithms &amp; Complex<br><br><br>
-				
-				COMP-SCI 361<br>
-				Introduction to Cybersecurity<br><br><br>
-				
-				COMP-SCI 304<br>
-				Ethics &amp; Professionalism<br><br><br>
-			</p>
+					COMP-SCI 451R<br>
+					Software Engineering Capstone<br><br><br>
+					
+					COMP-SCI 404<br>
+					Intro to Algorithms &amp; Complex<br><br><br>
+					
+					COMP-SCI 361<br>
+					Introduction to Cybersecurity<br><br><br>
+					
+					COMP-SCI 304<br>
+					Ethics &amp; Professionalism<br><br><br>
+				</p>
+			</div>
+			</div>
 		
 		</div>
 			
 			
 		<footer class="footer"> 
 			
-			© <span class="year">2025</span> Jacob Biddinger | All Rights Reserved <br>
+			<br><br> © <span class="year">1999</span> Jacob Biddinger | All Rights Reserved <br>
 			Contact: <a href="mailto:jsb58p@umkc.edu">jsb58p@umkc.edu</a><br>
 		
 		</footer>
@@ -207,6 +377,7 @@
 		<script src="final/script.js"></script>
 
 	
-	
 
-	</body></html>
+	</body>
+	
+</html>
