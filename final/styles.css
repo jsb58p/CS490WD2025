@@ -92,7 +92,6 @@ footer a{
     border-top: 10px groove gray;
     border-bottom: 10px ridge gray;
     margin: auto;
-    background-color: rgb(50, 50, 50);
     background: linear-gradient(to bottom, rgba(10, 10, 10, 1) 0%, rgba(50, 50, 50, 1) 100%);
     color: rgb(200, 200, 200);
     text-align: left;
@@ -101,25 +100,23 @@ footer a{
 }
 
 .bio h2 {
+	text-align: center;
 	font-family: 'Cinzel', Serif;
+	background-color: rgb(100, 100, 100, 1);
+	border-radius: 8px;
+	border: 2px solid rgba(5,50,100,.9);
+	margin: 5px;
+
+}
+
+.bio h2:hover {
+	cursor: pointer;
+	background-color: rgba(5,50,100,.9);
+
 }
 
 .bio h3{
 	font-family: 'Cinzel', Serif;
-}
-
-
-
-.wrapper {
-	font-family: 'Jost', sans-serif;
-	background-color: rgba(200, 200, 200, 1);
-	border-radius: 12px;
-	box-shadow: 0 4px 22px rgba(200,200,200,1);
-	padding: 30px;
-	border-radius: 15px;
-	border: 8px solid #ccc;	
-	margin: 50px auto;
-	width: 40%
 }
 
 .features {
@@ -133,11 +130,6 @@ footer a{
 
 .features h3 {
 	font-family: 'Cinzel', Serif;
-}
-
-.features.dark-mode {
-	background-color: rgba(0,35,100,0.75);
-
 }
 
 .feature {
@@ -205,21 +197,6 @@ footer a{
 	width: 100%;
 }
 
-.bio h2 {
-	text-align: center;
-	background-color: rgb(100, 100, 100, 1);
-	border-radius: 8px;
-	border: 2px solid rgba(5,50,100,.9);
-	margin: 5px;
-
-}
-
-.bio h2:hover {
-	cursor: pointer;
-	background-color: rgba(5,50,100,.9);
-
-}
-
 .details {
     max-height: 0;
     overflow: hidden;
@@ -229,7 +206,7 @@ footer a{
 }
 
 .details.show {
-    max-height: 100%; 
+    max-height: 5000px; 
     transition: max-height 1.0s ease;
     border: 1px solid black;
     color: white;
@@ -279,11 +256,10 @@ footer a{
 	}
 	
 	.feature{
-		padding-bottom: 50px;
+		padding-bottom: 70px;
 	}
 	
 	.wrapper {
 		width: 60%;
 	}
 }
-
